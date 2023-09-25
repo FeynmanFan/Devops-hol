@@ -6,7 +6,7 @@ the new robot model T-800. There is a Dockerfile to build the application, but i
 For the purposes of the container, Cyberdyne would like the application to built and run in a single container. This means 
 that the Dockerfile will need to be a multi-stage build, with multiple FROM statements. The current Dockerfile looks like this:
 
-`FROM mcr.microsoft.com/dotnet/sdk:7.0 AS build
+<pre>FROM mcr.microsoft.com/dotnet/sdk:7.0 AS build
 
 WORKDIR /src
 
@@ -25,7 +25,7 @@ RUN dotnet build "UnitHost.csproj" -c Release -o /app/build
 
 FROM build AS publish
 
-RUN dotnet publish "UnitHost.csproj" -c Release -o /app/publish /p:UseAppHost=false`
+RUN dotnet publish "UnitHost.csproj" -c Release -o /app/publish /p:UseAppHost=false</pre>
 
 This builds the file in a build stage named *build*, and then publishes the results of UnitHost.csproj in Release mode - if we were to use this in a real build, 
 we would have a volume mapped for /app so that we could capture the results as an artifact, but that is not what we're concerned with right now.
@@ -34,7 +34,7 @@ Your task is to
 
 1. Modify the Dockerfile to add an additional stage, *final*, that will actually execute the application inside the container. Once complete, you should see output like this:
 
-**Capturing image...
+<em>Capturing image...
 
 Deciding...
 
@@ -55,7 +55,7 @@ Capturing image...
 
 Deciding...
 
-Battery depleted. Replace with compatible RTG**
+Battery depleted. Replace with compatible RTG</em>
 
 That is the robot running through its decision loop. 
 
