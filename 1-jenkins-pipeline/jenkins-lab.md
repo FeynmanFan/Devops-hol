@@ -40,3 +40,5 @@ This command is assuming that port 8080 is free on your machine - if another app
 8. Execute the build and verify that it succeeds.
 
 9. Paste the url of your forked repo into the **DevOps Hands-on Lab** Discord channel for review.
+
+The *asset* mentioned in the base lab instructions for this lab is the Jenkinsfile you've created, and this is what will be evaluated.
