@@ -1,6 +1,5 @@
-# Devops-hol
-##Welcome to the Hands-on Labs! 
-###This repo is intended for use with the CourseCareers course *Intro to DevOps*.
+#Welcome to the Hands-on Labs! 
+##This repo is intended for use with the CourseCareers course *Intro to DevOps*.
 
 There are three labs:
 
