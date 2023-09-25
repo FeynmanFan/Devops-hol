@@ -7,15 +7,24 @@ For the purposes of the container, Cyberdyne would like the application to built
 that the Dockerfile will need to be a multi-stage build, with multiple FROM statements. The current Dockerfile looks like this:
 
 `FROM mcr.microsoft.com/dotnet/sdk:7.0 AS build
+
 WORKDIR /src
+
 COPY ["UnitHost/UnitHost/UnitHost.csproj", "UnitHost/UnitHost/"]
+
 COPY ["t800/t800.csproj", "t800/"]
+
 RUN dotnet restore "UnitHost/UnitHost/UnitHost.csproj"
+
 COPY . .
+
 WORKDIR "/src/UnitHost/UnitHost"
+
 RUN dotnet build "UnitHost.csproj" -c Release -o /app/build
 
+
 FROM build AS publish
+
 RUN dotnet publish "UnitHost.csproj" -c Release -o /app/publish /p:UseAppHost=false`
 
 This builds the file in a build stage named *build*, and then publishes the results of UnitHost.csproj in Release mode - if we were to use this in a real build, 
