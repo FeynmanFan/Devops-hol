@@ -30,7 +30,7 @@ RUN dotnet publish "UnitHost.csproj" -c Release -o /app/publish /p:UseAppHost=fa
 This builds the file in a build stage named *build*, and then publishes the results of UnitHost.csproj in Release mode - if we were to use this in a real build, 
 we would have a volume mapped for /app so that we could capture the results as an artifact, but that is not what we're concerned with right now.
 
-Your task is to 
+## Lab Steps
 
 1. Modify the Dockerfile to add an additional stage, *final*, that will actually execute the application inside the container. Once complete, you should see output like this:
 
@@ -70,5 +70,5 @@ Making sure that you execute in the same directory as the Dockerfile. This Docke
 
 ## Hint
 
-Visual Studio, a common tool for working with this project's tech stack, generates the Dockerfile to run the application. It might be useful to search for documentation of how it does this.
+Visual Studio, a common tool for working with this project's tech stack, generates the Dockerfile to run its applications automatically. It might be useful to search for documentation of how it does this.
 
