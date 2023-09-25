@@ -30,3 +30,6 @@ This is intended as a resource to aid your education and comfort level, and get 
 
 ###Please ask questions in the Discord!!!
 That's a big part of what it's for. Feel free to review other learner's repos, and make yours available in the same way. 
+
+### These labs must be completed in order
+The labs following the first rely on the repo you will fork in the first lab, so be sure not to skip labs and perform them out of order.
