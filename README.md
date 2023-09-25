@@ -1,5 +1,5 @@
-#Welcome to the Hands-on Labs! 
-##This repo is intended for use with the CourseCareers course *Intro to DevOps*.
+# Welcome to the Hands-on Labs! 
+## This repo is intended for use with the CourseCareers course *Intro to DevOps*.
 
 There are three labs:
 
@@ -28,9 +28,9 @@ The syntax is "git clone {forked-repo url}", but you should already know that. B
 
 Here is my explicit permission to view others' work! Looking at code that other people have written is an important part of being a technical professional; absent some formal constraint, this is not *cheating*, it is not lazy (except in the positive sense of Lazy Programmer), and put simply, no decent programmer does NOT review examples of how to solve problems - that's just not how it works.
 
-###Completion of the labs is not required for your certification###
+### Completion of the labs is not required for your certification
 
 This is intended as a resource to aid your education and comfort level, and get you comfortable with the nuts and bolts processes that you are likely to encounter on the first week of your job. 
 
-###Please ask questions in the Discord!!!###
+###P lease ask questions in the Discord!!!
 That's a big part of what it's for. Feel free to review other learner's repos, and make yours available in the same way. 
