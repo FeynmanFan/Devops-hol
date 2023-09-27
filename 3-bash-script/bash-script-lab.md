@@ -53,3 +53,6 @@ exit 1
 7. Paste the url of your forked repo into the **DevOps Hands-on Lab** Discord channel for review, making sure to mention which lab you have completed.
 
 ### Use the users.zip file found in this folder
+
+###Hint###
+Break the script into separate problems and solve them one at a time. The unzipping of the file, for example, is entirely separate from the problem of reading the lines from the file, and reading the lines from the file is entirely separate from the problem of examining a single line of text for the pattern.
