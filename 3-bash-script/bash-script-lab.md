@@ -12,7 +12,7 @@ echo "Exception: Pattern ' found on line: $line"
 exit 1
 </pre>
 
-Where $line is the line of the file that the single quote was found on. In Bash, * any number except zero, like 1 here, indicates failure.*
+Where $line is the line of the file that the single quote was found on. In Bash, *any number except zero, like 1 here, indicates failure.*
 
 ## Lab Steps
 
