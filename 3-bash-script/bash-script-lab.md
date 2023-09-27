@@ -33,6 +33,8 @@ The third line will unzip the file, overwriting any files already there so that 
 
 exit 1</pre>
 
+Note here that we're again returning 1 to indicate an error.
+
 3. Create a while loop that will loop through the lines in the file. You will probably need to search the Internet to learn how to do this.
 
 4. Create an if statement to test the value of the line against the regex. The value of the regex is this:
